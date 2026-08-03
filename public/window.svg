@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+=======
+<svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M1.5 2.5C1.5 1.94772 1.94772 1.5 2.5 1.5H13.5C14.0523 1.5 14.5 1.94772 14.5 2.5V4.5H1.5V2.5Z" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.5 4.5V13.5C1.5 14.0523 1.94772 14.5 2.5 14.5H13.5C14.0523 14.5 14.5 14.0523 14.5 13.5V4.5" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 3H4.5075" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.5 3H6.5075" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 3H8.5075" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"/></svg>
+>>>>>>> f7d782501aa05b214f0ce4f38842c8241ab9593d
