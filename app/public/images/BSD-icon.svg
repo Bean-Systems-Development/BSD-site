@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100%" viewBox="0 0 1024 544" enable-background="new 0 0 1024 544" xml:space="preserve">
 <path fill="#000000" opacity="1.000000" stroke="none" 
@@ -94,10 +93,4 @@ M587.653931,224.001129
 	C587.848328,246.138962 587.654297,235.317245 587.653931,224.001129 
 z"/>
 </svg>
-=======
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M2 12L12 17L22 12" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
->>>>>>> f7d782501aa05b214f0ce4f38842c8241ab9593d
+

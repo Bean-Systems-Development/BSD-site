@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, Code2 } from "lucide-react";
 import Image from "next/image";
-import BSD_icon from "../public/images/BSD-icon.svg"
+import BSD_icon from "../public/images/BSD-icon.svg";
 
 const navLinks = [
   { href: "/", label: "Home" },
