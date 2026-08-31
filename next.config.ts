@@ -7,7 +7,8 @@ const nextConfig: NextConfig = {
   },
   allowedDevOrigins: [
     '192.168.8.158',
-    'https://bean-systems-development.github.io'
+    'https://bean-systems-development.github.io',
+    'https://beansystemsdevelopment.com',
   ],
 };
 
