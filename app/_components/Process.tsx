@@ -14,17 +14,18 @@ const steps = [
   {
     icon: Code2,
     title: "Build & iterate",
-    description: "We ship in short cycles with regular demos. You see progress early and can steer before it matters.",
+    description: "We build in short cycles with regular demos. You see progress early and can steer before it matters.",
   },
   {
     icon: Rocket,
     title: "Deploy & launch",
-    description: "Production-ready deployment with CI/CD, monitoring, and a smooth handover or ongoing hosting.",
+    description: "Production-ready deployment with a smooth handover or CI/CD and monitoring.",
+    // description: "Production-ready deployment with CI/CD, monitoring, and a smooth handover or ongoing hosting.",
   },
   {
     icon: HeartHandshake,
     title: "Maintain & grow",
-    description: "Post-launch support, scheduled maintenance, and a trusted partner when you're ready to add new features.",
+    description: "Post-launch support, scheduled maintenance (if wanted), and a trusted partner when you're ready to add new features.",
   },
 ];
 
