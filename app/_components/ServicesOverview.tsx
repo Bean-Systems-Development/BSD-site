@@ -6,7 +6,7 @@ const services = [
     icon: Globe,
     title: "Website Development",
     description:
-      "Pixel-perfect, performant websites built with Next.js, TypeScript, and Tailwind. From marketing sites to full-stack web apps.",
+      "Scalable, performant websites built with Next.js, TypeScript, and Tailwind. From landing page sites to full-stack web apps.",
     href: "/services#web",
     accent: "text-electric-bright",
     bg: "bg-electric/10",
