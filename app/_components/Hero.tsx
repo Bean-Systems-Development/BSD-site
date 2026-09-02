@@ -5,13 +5,13 @@ import { ArrowRight, Terminal } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const codeLines = [
-  { prefix: "$ ", text: "npx create-next-app@latest my-project", color: "text-accent-bright" },
-  { prefix: "  ", text: "✓ TypeScript configured", color: "text-green-400" },
-  { prefix: "  ", text: "✓ Tailwind CSS installed", color: "text-green-400" },
-  { prefix: "  ", text: "✓ App Router enabled", color: "text-green-400" },
-  { prefix: "$ ", text: "pip install fastapi uvicorn sqlalchemy", color: "text-accent-bright" },
-  { prefix: "  ", text: "✓ API endpoints ready", color: "text-green-400" },
+  { prefix: "  ", text: "✓ Spec out project", color: "text-green-400" },
+  { prefix: "$ ", text: "sudo create custom project", color: "text-accent-bright" },
+  { prefix: "  ", text: "✓ Build and refine the code", color: "text-green-400" },
+  { prefix: "  ", text: "✓ User acceptance testing", color: "text-green-400" },
   { prefix: "$ ", text: "git push origin main && deploy 🚀", color: "text-accent-bright" },
+  { prefix: "  ", text: "✓ Enjoy your personalized software", color: "text-green-400" },
+  { prefix: " ", text: "✓ Maintain & upgrade", color: "text-green-400" },
 ];
 
 export default function Hero() {
@@ -25,16 +25,11 @@ export default function Hero() {
       return () => clearTimeout(timer);
     }
   }, [visibleLines]);
-  console.log("🚀 ~ Hero ~ }:", process.env.NEXT_PUBLIC_COMPANY_NAME)
-
 
   return (
     <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
       {/* Background grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
-      {/* Radial glow 
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-electric/5 blur-3xl pointer-events-none" />
-      */}
 
       <div className="relative mx-auto max-w-6xl px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left: Copy */}
@@ -52,7 +47,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg text-text-secondary leading-relaxed mb-10 max-w-lg">
-            {process.env.NEXT_PUBLIC_COMPANY_NAME} crafts high-performance apps and websites using TypeScript, Python, and modern frameworks — then keeps them running at their best.
+            {process.env.NEXT_PUBLIC_COMPANY_NAME} crafts high-performance apps and websites using technologies such as TypeScript, Python, or Java to best meet your software needs.
           </p>
 
           <div className="flex flex-wrap gap-4">
