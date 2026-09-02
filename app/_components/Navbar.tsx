@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, Code2 } from "lucide-react";
 import Image from "next/image";
-import BSD_icon from "../public/images/BSD-icon.svg";
+import BSD_icon_blue from "../public/images/BSD-icon-blue.svg";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -28,7 +28,7 @@ export default function Navbar() {
             <div className="flex h-8 w-8 items-center justify-center rounded-md bg-electric/10 ring-1 ring-electric/30 group-hover:bg-electric/20 transition-colors">
               <Code2 className="h-4 w-4 text-electric-bright" />
               <Image
-                src={BSD_icon}
+                src={BSD_icon_blue}
                 alt={"BSD-icon.svg"}
                 width={50}
                 height={50}
