@@ -1,12 +1,12 @@
 const stack = [
-  { name: "Python", role: "Backend & APIs", color: "text-yellow-400" },
-  { name: "TypeScript", role: "Full-stack logic", color: "text-blue-400" },
-  { name: "Next.js", role: "Web framework", color: "text-white" },
-  { name: "Tailwind CSS", role: "Styling", color: "text-cyan-400" },
+  { name: "TypeScript", role: "Full-stack logic", color: "text-white" },
+  { name: "Next.js", role: "Web framework", color: "text-blue-400" },
+  { name: "Tailwind CSS / CSS3", role: "Styling", color: "text-cyan-400" },
   { name: "HTML5", role: "Structure & markup", color: "text-orange-400" },
-  { name: "CSS3", role: "Custom styling", color: "text-purple-400" },
-  { name: "FastAPI", role: "REST APIs", color: "text-green-400" },
-  { name: "PostgreSQL", role: "Database", color: "text-sky-400" },
+  { name: "Node.JS", role: "Backend & APIs", color: "text-green-400" },
+  { name: "Python", role: "Backend & APIs", color: "text-yellow-400" },
+  { name: "MySQL/NoSQL", role: "Database", color: "text-sky-400" },
+  { name: "Java", role: "App development", color: "text-purple-400" },
 ];
 
 export default function TechStack() {
