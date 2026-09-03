@@ -3,23 +3,25 @@
 import { useState } from "react";
 import { Mail, MapPin, Clock, Send, CheckCircle2 } from "lucide-react";
 
+const EMAIL_ADDRESS = "info@beansystemsdevelopment.com";
+
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "[email@company.com]",
-    href: "mailto:[email@company.com]",
+    value: EMAIL_ADDRESS,
+    href: `mailto:${EMAIL_ADDRESS}`,
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "[City, Country]",
+    value: "Bloemfontein, Free State",
     href: null,
   },
   {
     icon: Clock,
     label: "Response time",
-    value: "Within 24 hours",
+    value: "Within 48 hours",
     href: null,
   },
 ];
@@ -48,11 +50,23 @@ export default function ContactPage() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  function handleSubmit(e: React.FormEvent) {
+  const [result, setResult] = useState("");
+
+  async function handleSubmit(e: any) {
     e.preventDefault();
-    // TODO: wire up to form API (Resend, Formspree, etc.)
+
+    const formData = new FormData(e.target);
+    formData.append("access_key", (process.env.NEXT_PUBLIC_WEB_3_FORMS_ACCESS_KEY as string));
+    
+    const response = await fetch((process.env.NEXT_PUBLIC_WEB_3_FORMS_API_LINK as string), {
+      method: "POST",
+      body: formData
+    });
+    
+    const data = await response.json();
+    setResult(data.success ? "Success!" : "Error");
     setSubmitted(true);
-  }
+  };
 
   return (
     <div className="pt-16">
@@ -64,7 +78,7 @@ export default function ContactPage() {
           Let's talk
         </h1>
         <p className="text-text-secondary max-w-md mb-16 leading-relaxed">
-          Tell us about your project. We'll respond within 24 hours with honest thoughts and next steps.
+          Tell us about your project. We'll respond within 48 hours with honest thoughts and next steps.
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
@@ -97,7 +111,7 @@ export default function ContactPage() {
             <div className="mt-8 rounded-xl border border-white/5 bg-navy-900 p-6">
               <p className="text-sm font-600 text-text-primary mb-2">Free discovery call</p>
               <p className="text-xs text-text-secondary leading-relaxed">
-                Not sure what you need? Book a free 30-minute call and we'll help you figure it out — no commitment required.
+                Not sure what you need? Book a free call and we'll help you figure it out — no commitment required.
               </p>
             </div>
           </div>
@@ -119,7 +133,7 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div>
                     <label className="block text-xs font-medium text-text-muted mb-1.5 font-mono">
-                      Your name *
+                      Name *
                     </label>
                     <input
                       type="text"
@@ -127,7 +141,7 @@ export default function ContactPage() {
                       required
                       value={form.name}
                       onChange={handleChange}
-                      placeholder="[Your name]"
+                      placeholder="John Doe"
                       className="w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-text-primary placeholder:text-text-muted focus:border-electric/50 focus:outline-none focus:ring-1 focus:ring-electric/30 transition-colors"
                     />
                   </div>
@@ -141,13 +155,13 @@ export default function ContactPage() {
                       required
                       value={form.email}
                       onChange={handleChange}
-                      placeholder="[you@company.com]"
+                      placeholder="john@doe.com"
                       className="w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-text-primary placeholder:text-text-muted focus:border-electric/50 focus:outline-none focus:ring-1 focus:ring-electric/30 transition-colors"
                     />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 gap-5">
                   <div>
                     <label className="block text-xs font-medium text-text-muted mb-1.5 font-mono">
                       Project type
@@ -164,24 +178,6 @@ export default function ContactPage() {
                           {t}
                         </option>
                       ))}
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-medium text-text-muted mb-1.5 font-mono">
-                      Budget range
-                    </label>
-                    <select
-                      name="budget"
-                      value={form.budget}
-                      onChange={handleChange}
-                      className="w-full rounded-lg border border-white/10 bg-navy-900 px-4 py-3 text-sm text-text-primary focus:border-electric/50 focus:outline-none focus:ring-1 focus:ring-electric/30 transition-colors"
-                    >
-                      <option value="">Select...</option>
-                      <option>Under $5k</option>
-                      <option>$5k – $15k</option>
-                      <option>$15k – $50k</option>
-                      <option>$50k+</option>
-                      <option>Prefer to discuss</option>
                     </select>
                   </div>
                 </div>
