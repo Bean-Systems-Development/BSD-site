@@ -14,14 +14,12 @@ const services = [
     title: "Website Development",
     tagline: "Fast, modern, and built to convert.",
     description:
-      "We build websites that work hard: marketing sites, content platforms, dashboards, and full-stack web applications. Every project starts with your users and your goals.",
+      "We build websites that work hard: landing page sites, content platforms, dashboards, and full-stack web applications. Every project starts with your users and your goals.",
     features: [
-      "Next.js App Router with TypeScript",
+      "Next.js App with TypeScript",
       "Responsive across all screen sizes",
       "SEO-optimised HTML structure",
-      "Tailwind CSS — no bloated CSS frameworks",
-      "CMS integration (Sanity, Contentlayer, etc.)",
-      "Performance-first architecture",
+      "Tailwind CSS",
     ],
     accent: "text-electric-bright",
     border: "border-electric/20",
@@ -35,12 +33,11 @@ const services = [
     description:
       "Whether it's a web app, a desktop tool, or a cross-platform mobile application — we architect clean solutions with well-defined APIs, proper state management, and long-term maintainability in mind.",
     features: [
-      "TypeScript throughout the stack",
-      "Python + FastAPI or Django backends",
-      "RESTful and GraphQL APIs",
+      "TypeScript frontends",
+      "Python or Java backends",
       "Authentication & authorisation",
-      "Database design and migrations",
-      "Cloud deployment (Vercel, AWS, GCP, etc.)",
+      "Database implementation",
+      "Cloud deployment",
     ],
     accent: "text-accent-bright",
     border: "border-accent/20",
@@ -52,14 +49,12 @@ const services = [
     title: "Maintenance",
     tagline: "Keep it running. Keep it safe.",
     description:
-      "Software that ships is software that needs care. We offer scheduled maintenance retainers so your apps and websites stay secure, performant, and dependency-current — without you having to think about it.",
+      "Software that ships needs tender love and care. We offer scheduled maintenance retainers so your apps and websites stay secure, efficient, and reliable — without you having to think about it.",
     features: [
       "Dependency and security patches",
-      "Bug fixes and regression testing",
       "Uptime and error monitoring",
-      "Regular backups and restore drills",
-      "Monthly health reports",
-      "Priority response SLAs available",
+      "Health reports",
+      "Bug fixes",
     ],
     accent: "text-purple-400",
     border: "border-purple-500/20",
@@ -71,14 +66,12 @@ const services = [
     title: "Upgrades & Migrations",
     tagline: "Your existing code, made better.",
     description:
-      "Stuck on an old framework? Struggling with tech debt? We safely migrate and upgrade existing codebases — adding features, improving performance, or moving to a modern stack entirely.",
+      "Stuck on an old framework? Struggling with tech debt? We safely migrate and upgrade existing codebases.",
     features: [
       "Framework and runtime upgrades",
-      "JavaScript → TypeScript migrations",
       "Monolith → microservice refactoring",
       "Database migrations",
-      "Performance profiling and optimisation",
-      "Legacy integrations replaced cleanly",
+      "Performance optimisation",
     ],
     accent: "text-amber-400",
     border: "border-amber-500/20",
@@ -94,11 +87,11 @@ const stackGroups = [
   },
   {
     label: "Backend",
-    items: ["Python", "FastAPI", "Django", "Node.js", "REST APIs", "GraphQL"],
+    items: ["Java", "Python", "Node.js", "REST APIs", "GraphQL"],
   },
   {
-    label: "Data & Infra",
-    items: ["PostgreSQL", "SQLite", "Supabase", "Vercel", "AWS", "Docker"],
+    label: "Data Infrastructure",
+    items: ["PostgreSQL", "MongoDB", "Firebase", "Vercel"],
   },
 ];
 
@@ -189,7 +182,7 @@ export default function ServicesPage() {
           Not sure which service you need?
         </h2>
         <p className="text-text-secondary mb-8 max-w-md mx-auto">
-          Tell us about your project and we'll figure it out together — no sales pressure, no jargon.
+          Tell us about your project and we'll figure it out together — no sales pressure.
         </p>
         <Link
           href="/contact"
