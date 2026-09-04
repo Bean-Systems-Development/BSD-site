@@ -48,7 +48,10 @@ jobs:
 
       - name: Build with Next.js
         run: npm run build
-
+        env:
+          NEXT_PUBLIC_COMPANY_NAME: ${{ vars.NEXT_PUBLIC_COMPANY_NAME }}
+          NEXT_PUBLIC_WEB_3_FORMS_ACCESS_KEY: ${{ vars.NEXT_PUBLIC_WEB_3_FORMS_ACCESS_KEY }}
+          NEXT_PUBLIC_WEB_3_FORMS_API_LINK: ${{ vars.NEXT_PUBLIC_WEB_3_FORMS_API_LINK }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
