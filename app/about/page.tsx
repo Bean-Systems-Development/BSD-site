@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Users, Target, Shield, Lightbulb } from "lucide-react";
+import { Users, Target, Shield, Lightbulb, Lock } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -9,44 +9,37 @@ export const metadata: Metadata = {
 
 const values = [
   {
+    icon: Lock,
+    title: "Reliability",
+    description:
+      "We write code that runs according to what you asked for. We cater for the edge cases and plan for the unexpected.",
+  },
+  {
     icon: Target,
-    title: "Clarity over cleverness",
+    title: "Scalability",
     description:
-      "We write code that the next developer — or future-us — can understand without a map. Simple solutions to complex problems.",
-  },
-  {
-    icon: Shield,
-    title: "Reliability you can measure",
-    description:
-      "We don't just ship and disappear. We set up monitoring, write tests, and stay accountable for what we build.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Honest opinions",
-    description:
-      "If a technology choice will hurt you in six months, we'll say so. We'd rather lose a sale than watch a client make a mistake.",
+      "We plan our systems so they can be easily expanded. We know that creativity tak",
   },
   {
     icon: Users,
-    title: "Client as collaborator",
+    title: "Communication",
     description:
-      "The best products come from tight feedback loops. We treat clients as teammates, not ticket-raisers.",
+      "We aim to clearly communicate with you to make sure you're happy with the final product. We build in phases to make sure your vision is not lost along the way.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Optimization",
+    description:
+      "We use modern tools and practices to ensure your system gets maximum output with minimal resources.",
   },
 ];
 
 const team = [
   {
-    name: "[Team Member Name]",
-    role: "[Role — e.g. Founder & Lead Engineer]",
-    bio: "[Short bio — background, specialties, what you care about in your craft.]",
-    initials: "TM",
-  },
-  {
-    name: "[Team Member Name]",
-    role: "[Role — e.g. Frontend Developer]",
-    bio: "[Short bio — background, specialties, what you care about in your craft.]",
-    initials: "TM",
-  },
+    name: "Nathan",
+    role: "Founder & Lead Developer",
+    initials: "NDG",
+  }
 ];
 
 export default function AboutPage() {
@@ -60,15 +53,15 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <h1 className="font-display text-5xl font-700 text-text-primary leading-tight mb-6">
-              A small team that punches above its weight
+              A small team solving problems for you
             </h1>
           </div>
           <div>
             <p className="text-text-secondary leading-relaxed mb-4">
-              {process.env.NEXT_PUBLIC_COMPANY_NAME} is a boutique software studio based in [City, Country]. We build apps and websites for businesses that want high-quality software without the overhead of a large agency.
+              {process.env.NEXT_PUBLIC_COMPANY_NAME} is a software development company based in Bloemfontein. We build websites and apps for businesses that want high-quality software.
             </p>
             <p className="text-text-secondary leading-relaxed">
-              We work across the full stack — Python on the backend, TypeScript on the front — and we take a long-term view on everything we build. Maintenance and upgrades aren't an afterthought; they're built into how we work from day one.
+              We work across the full stack and we take a long-term view on everything we build. Maintenance and upgrades aren't an afterthought; they're built into how we work from day one.
             </p>
           </div>
         </div>
@@ -121,16 +114,8 @@ export default function AboutPage() {
                 </div>
                 <p className="font-display font-600 text-text-primary">{member.name}</p>
                 <p className="text-xs text-electric-bright font-mono mt-1 mb-3">{member.role}</p>
-                <p className="text-sm text-text-secondary leading-relaxed">{member.bio}</p>
               </div>
             ))}
-
-            {/* Add team member placeholder */}
-            <div className="rounded-xl border border-dashed border-white/10 p-7 flex items-center justify-center">
-              <p className="text-sm text-text-muted text-center">
-                [Add more team members here]
-              </p>
-            </div>
           </div>
         </div>
       </div>
