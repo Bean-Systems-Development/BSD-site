@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     // <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-navy-950/80 backdrop-blur-md">
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-bsd-red backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-bsd-grey backdrop-blur-md">
       <div className="mx-auto max-w-6xl px-6">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -57,12 +57,6 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <Link
-              href="/contact"
-              className="ml-4 px-4 py-2 rounded-md bg-electric text-white text-sm font-medium hover:bg-electric-bright transition-colors"
-            >
-              Get a Quote
-            </Link>
           </nav>
 
           {/* Mobile toggle */}
@@ -95,13 +89,6 @@ export default function Navbar() {
                 </Link>
               );
             })}
-            <Link
-              href="/contact"
-              onClick={() => setMobileOpen(false)}
-              className="block mt-2 px-4 py-2.5 rounded-md bg-electric text-white text-sm font-medium text-center"
-            >
-              Get a Quote
-            </Link>
           </div>
         )}
       </div>

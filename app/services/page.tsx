@@ -34,10 +34,9 @@ const services = [
       "Whether it's a web app, a desktop tool, or a cross-platform mobile application — we architect clean solutions with well-defined APIs, proper state management, and long-term maintainability in mind.",
     features: [
       "TypeScript frontends",
-      "Python or Java backends",
+      "Java or Python backends",
       "Authentication & authorisation",
       "Database implementation",
-      "Cloud deployment",
     ],
     accent: "text-accent-bright",
     border: "border-accent/20",
@@ -69,9 +68,9 @@ const services = [
       "Stuck on an old framework? Struggling with tech debt? We safely migrate and upgrade existing codebases.",
     features: [
       "Framework and runtime upgrades",
+      "Performance optimisation",
       "Monolith → microservice refactoring",
       "Database migrations",
-      "Performance optimisation",
     ],
     accent: "text-amber-400",
     border: "border-amber-500/20",

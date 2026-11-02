@@ -11,13 +11,12 @@ const footerLinks = {
   Company: [
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
-    { label: "Get a Quote", href: "/contact" },
   ],
 };
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/5 bg-navy-950 mt-24">
+    <footer className="border-t border-white/5 bg-navy-950">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-10 grid-cols-1 md:grid-cols-2 md:px-16">
           {/* Links */}

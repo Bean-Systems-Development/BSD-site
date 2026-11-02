@@ -8,10 +8,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <TechStack />
       <ServicesOverview />
       <Process />
       <CTABanner />
+      {/* <TechStack /> */}
     </>
   );
 }

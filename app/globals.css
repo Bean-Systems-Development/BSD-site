@@ -2,7 +2,8 @@
 @import "tailwindcss";
 
 @theme inline {
-  --bsd-red: #5e0d0d;
+  --bsd-red: #414141;
+  /*#5e0d0d;*/
   --bsd-grey: #212121;
   --bsd-blue: #050d33;
   --color-navy-950: #05080f;
@@ -42,11 +43,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.text-bsd-red {
+.text-bsd-grey {
   color: var(--bsd-red);
 }
 
-.text-bsd-grey {
+.text-bsd-dark-grey {
   color: var(--bsd-grey);
 }
 
@@ -54,11 +55,11 @@ body {
   color: var(--bsd-blue);
 }
 
-.bg-bsd-red {
+.bg-bsd-grey {
   background: var(--bsd-red);
 }
 
-.bg-bsd-grey {
+.bg-bsd-dark-grey {
   background: var(--bsd-grey);
 }
 

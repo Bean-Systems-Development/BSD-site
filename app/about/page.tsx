@@ -61,7 +61,7 @@ export default function AboutPage() {
               {process.env.NEXT_PUBLIC_COMPANY_NAME} is a software development company based in Bloemfontein. We build websites and apps for businesses that want high-quality software.
             </p>
             <p className="text-text-secondary leading-relaxed">
-              We work across the full stack and we take a long-term view on everything we build. Maintenance and upgrades aren't an afterthought; they're built into how we work from day one.
+              We work across the full stack and take a long-term view on everything we build. Maintenance and upgrades aren't an afterthought, they're built into how we work from day one.
             </p>
           </div>
         </div>
@@ -71,31 +71,33 @@ export default function AboutPage() {
       <div className="border-t border-white/5" />
 
       {/* Values */}
-      <div className="mx-auto max-w-6xl px-6 py-20">
-        <p className="text-xs font-600 uppercase tracking-widest text-text-muted mb-10 font-mono">
-          What we stand for
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          {values.map((value) => {
-            const Icon = value.icon;
-            return (
-              <div
+      <div className="bg-navy-900 w-full">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <p className="text-xs font-600 uppercase tracking-widest text-text-muted mb-10 font-mono">
+            What we stand for
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {values.map((value) => {
+              const Icon = value.icon;
+              return (
+                <div
                 key={value.title}
                 className="rounded-xl border border-white/5 bg-navy-900 p-7 hover:border-electric/20 transition-colors"
-              >
-                <Icon className="h-5 w-5 text-electric-bright mb-4" />
-                <h3 className="font-display text-base font-600 text-text-primary mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-sm text-text-secondary leading-relaxed">{value.description}</p>
-              </div>
-            );
-          })}
+                >
+                  <Icon className="h-5 w-5 text-electric-bright mb-4" />
+                  <h3 className="font-display text-base font-600 text-text-primary mb-2">
+                    {value.title}
+                  </h3>
+                  <p className="text-sm text-text-secondary leading-relaxed">{value.description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
       {/* Team */}
-      <div className="border-t border-white/5 bg-navy-900 py-20">
+      <div className="border-t border-white/5 py-20">
         <div className="mx-auto max-w-6xl px-6">
           <p className="text-xs font-600 uppercase tracking-widest text-text-muted mb-10 font-mono">
             The team
@@ -121,19 +123,21 @@ export default function AboutPage() {
       </div>
 
       {/* CTA */}
-      <div className="mx-auto max-w-6xl px-6 py-20 text-center">
-        <h2 className="font-display text-3xl font-700 text-text-primary mb-4">
-          Want to work with us?
-        </h2>
-        <p className="text-text-secondary mb-8">
-          We're always open to interesting projects.
-        </p>
-        <Link
-          href="/contact"
-          className="inline-flex items-center gap-2 rounded-md bg-electric px-7 py-3.5 text-sm font-600 text-white hover:bg-electric-bright transition-colors"
-        >
-          Get in touch
-        </Link>
+      <div className="bg-navy-900 w-full">
+        <div className="mx-auto max-w-6xl px-6 py-20 text-center">
+          <h2 className="font-display text-3xl font-700 text-text-primary mb-4">
+            Want to work with us?
+          </h2>
+          <p className="text-text-secondary mb-8">
+            We're always open to interesting projects.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-flex items-center gap-2 rounded-md bg-electric px-7 py-3.5 text-sm font-600 text-white hover:bg-electric-bright transition-colors"
+          >
+            Get in touch
+          </Link>
+        </div>
       </div>
     </div>
   );

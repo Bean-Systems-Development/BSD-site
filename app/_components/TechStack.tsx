@@ -5,8 +5,8 @@ const stack = [
   { name: "HTML5", role: "Structure & markup", color: "text-orange-400" },
   { name: "Node.JS", role: "Backend & APIs", color: "text-green-400" },
   { name: "Python", role: "Backend & APIs", color: "text-yellow-400" },
-  { name: "MySQL/NoSQL", role: "Database", color: "text-sky-400" },
-  { name: "Java", role: "App development", color: "text-purple-400" },
+  { name: "PostgreSQL/NoSQL", role: "Database", color: "text-sky-400" },
+  { name: "Java/Kotlin", role: "App development", color: "text-purple-400" },
 ];
 
 export default function TechStack() {

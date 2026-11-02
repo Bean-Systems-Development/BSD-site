@@ -46,7 +46,7 @@ const services = [
 
 export default function ServicesOverview() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-24">
+    <section className="mx-auto max-w-6xl px-6 py-16 bg-navy-900">
       <div className="mb-14 max-w-xl">
         <p className="text-xs font-600 uppercase tracking-widest text-electric-bright mb-3 font-mono">
           What we do
@@ -60,7 +60,7 @@ export default function ServicesOverview() {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {services.map((service) => {
+        {services.map((service) => {``
           const Icon = service.icon;
           return (
             <Link
